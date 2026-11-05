@@ -1,0 +1,32 @@
+{
+  "slug": "template-agrowisata",
+  "judul": "Template Agrowisata & Komunitas Tani",
+  "ringkas": "Template website premium untuk agrowisata, kebun, dan komunitas tani: gaya bento, dua bahasa EN/ID, akordion program, animasi GSAP.",
+  "teknologi": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "GSAP"
+  ],
+  "kategori": "Template Website",
+  "tier": "premium",
+  "fitur": [
+    "Gaya agri bento modern",
+    "Dua bahasa EN/ID satu klik",
+    "Hero kapsul dengan chip angka",
+    "Akordion program ganti gambar",
+    "Linimasa perjalanan geser",
+    "Bagian SDGs & ESG",
+    "Galeri + pita mitra berjalan",
+    "Ilustrasi SVG buatan sendiri",
+    "Aman tanpa JS & reduced-motion"
+  ],
+  "cara": [
+    "Unduh/clone folder ini",
+    "Ganti teks di index.html (EN) dan objek ID di app.js",
+    "Ganti warna di style.css (:root)",
+    "Ganti img/*.svg dengan foto Anda (nama sama)",
+    "Buka index.html lalu unggah ke hosting statis"
+  ],
+  "demo": "index.html"
+}
