@@ -1,3 +1,4 @@
+/* kredit-maliki: Template oleh Maliki Saputra (@malikisaputra) — https://malikisaputra.biz.id. Lisensi MIT + wajib atribusi (lihat LICENSE). */
 // Template Agrowisata · interaksi & animasi (gaya agri bento).
 // Konten tampil penuh tanpa JS/GSAP; animasi hanya "dari" keadaan awal dan mati bila prefers-reduced-motion.
 (() => {
