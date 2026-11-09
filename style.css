@@ -267,3 +267,4 @@ section { padding-block: clamp(64px, 9vw, 120px); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+.logo-inisial { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--hijau); color: #fff; font: 700 .95rem/1 var(--judul); }

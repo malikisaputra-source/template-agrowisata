@@ -39,6 +39,24 @@ meta.json, README.md, LICENSE, ss.png
 
 Teks bahasa Inggris ada di `index.html`, terjemahan Indonesia di objek `ID` di awal `app.js` (kunci `data-i18n`). Nama brand: cari `Lembah` / `Kebun Lembah Hijau`. Kontak (WA 0812-0000-0000, contoh@email.com, @akun.contoh) ada di bagian CTA & footer. Warna di `style.css` `:root`. Gambar: ganti `img/*.svg` dengan foto Anda (nama berkas sama atau ubah `src`).
 
+## Ganti logo & foto
+
+Semua gambar ada di folder `img/` dan dipanggil dengan nama tetap. Cara termudah: **timpa berkasnya dengan nama yang sama** (boleh JPG/WebP, lalu ganti ekstensi `.svg` di `index.html`; untuk foto akordion program juga di `app.js`, baris `img/${ak.dataset.img}.svg`). Gambar bawaan adalah ilustrasi SVG buatan sendiri, bukan foto orang/merek asli.
+
+| Slot | Berkas | Rasio |
+|---|---|---|
+| Logo (navbar, footer, favicon) | `img/logo.svg` | 1:1 |
+| Hero | `img/hero.svg` | 3:2 (1280×859) |
+| Avatar chip hero | `avatar.svg`, `inklusif.svg`, `hari-tani.svg` | 1:1 kecil |
+| Bento "Tentang" | `komunitas.svg`, `panen.svg`, `pelatihan.svg` | 3:2 / 4:3 |
+| Foto paket/program (akordion) | nama di atribut `data-img` tiap `.ak` di `index.html` | 4:3 |
+| Linimasa perjalanan | `kolase`, `nasional`, `ekspedisi`, `olahan`, `penghargaan`, `global` | sesuai `width/height` |
+| Tokoh/pendiri | `img/tokoh.svg` | 3:4 |
+| Galeri | `hari-tani`, `produk`, `diskusi`, `lestari`, `pasar`, `media` | campur |
+| Penutup CTA | `img/penutup.svg` | 3:2 |
+
+Bila logo gagal dimuat, navbar otomatis menampilkan inisial nama brand. Kompres foto (≤200 KB, lebar ≤1600 px) dan perbarui teks `alt`.
+
 ## Kredit
 
 Dibuat oleh Maliki Studio — malikisaputra.biz.id, follow TikTok/IG @malikisaputra

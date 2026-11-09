@@ -226,6 +226,12 @@
   let simpan = null; try { simpan = localStorage.getItem("bt-lang"); } catch (e) {}
   const awal = simpan || ((navigator.language || "").toLowerCase().startsWith("id") ? "id" : "en");
   setBahasa(awal, true);
+  // Logo: bila img/logo.svg gagal dimuat, tampilkan inisial nama brand.
+  document.querySelectorAll(".nav-logo img").forEach((im) => {
+    const ganti = () => { const s = document.createElement("span"); s.className = "logo-inisial"; s.setAttribute("aria-hidden", "true");
+      s.textContent = (im.parentElement.textContent.trim().match(/[A-Z]/g) || ["K"]).slice(0, 2).join(""); im.replaceWith(s); };
+    if (im.complete && im.naturalWidth === 0) ganti(); else im.addEventListener("error", ganti, { once: true });
+  });
   if (window.gsap && window.ScrollTrigger) animasi();
   addEventListener("load", () => window.ScrollTrigger && ScrollTrigger.refresh());
 })();
